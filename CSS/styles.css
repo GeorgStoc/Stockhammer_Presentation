@@ -1,0 +1,247 @@
+*{padding: 0;margin: 0;}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+/* Section colors */
+.c1{
+    background-color: #3C84AB;
+    color: #DEFCF9;
+}
+.c2{
+    background-color: #DEFCF9;
+    color: #362FD9;
+}
+/* header */
+#header{
+    background-image: url(/img/1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #3C84AB;    
+}
+/* Hamburger Button on small screens */
+.h-button{
+    background-color: transparent;
+    color: inherit;
+    cursor: pointer;
+    border: 10px;
+    font-size: 30px;
+    margin-left: 32px;
+    float: left;
+    line-height: 70px;
+    display: none;
+}
+.h-button:focus{
+    outline: none;
+}
+/* navbar */
+nav{
+    flex-wrap: wrap;
+    color: #362FD9;    
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    text-transform: uppercase;
+}
+nav ul li{
+    padding: 1.25rem 1.25rem;
+    border: solid;
+    border-width: .4rem;
+    border-color:transparent;
+    color: #362FD9;
+}
+nav ul li a{
+    letter-spacing: .35rem;
+    font-size: 0.8rem;    
+}
+nav ul li:hover{
+    border: solid #362FD9;
+    border-width: 0 0 .4rem 0;   
+}
+/* Headline */
+.head-container{
+    width: 66%;
+    color: #3C84AB;
+    margin-top: 15%;
+    margin-bottom: auto;
+    margin-left: 30%;
+    margin-right: auto;       
+}
+
+.head-container h1{
+    font-size: 6rem;
+    font-family: 'Roboto', sans-serif;
+}
+.head-container h3{
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+}
+.head-container a{
+    display: block;
+    margin-top: 1rem;  
+    background-color: #ffa802;
+    color: #DEFCF9;
+    border: 1rem outset #ffa802;
+    border-radius: 1rem;
+    text-align: center;
+    width: fit-content;
+    font-weight: bold;
+    font-size: 2rem;
+}
+.flex-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#header .flex-container{
+    flex-wrap: wrap;
+    align-content: stretch;
+    height: 67.5rem;
+}
+/* Container for Sections*/ 
+.text-container{
+    width: 20%;
+    height: 100%;
+    padding: 2rem;
+    letter-spacing: .1rem;
+    margin: auto;
+    line-height: 1.5rem;
+    text-align: center;
+}
+/* table for skills*/
+table{
+    margin: auto;
+}
+td{
+    font-size: 1rem;
+}
+/* Image next to about me */
+.img-container{
+    margin: auto;
+    width: 50%;
+}
+/* Link in Work Section */
+#work a{
+    font-style: italic;
+}
+#work a:hover{
+    color: #362FD9;
+}
+
+#footer{
+    text-align: center;
+    font-size: smaller;
+   
+}
+/* Link in footer*/
+#footer a{
+    font-style: italic;
+    padding-bottom: 2rem;
+}
+#footer a:hover{
+    color: #3C84AB;
+}
+/* media queries */
+/* for background image in the header */
+@media (max-width: 1920px) {
+    #header{
+        height: 67.5rem;
+    }    
+}
+@media (max-width: 1024px) {
+    #header{
+        height: 48rem;
+    }    
+}
+@media (max-width: 640px) {
+    #header{
+        height: 30rem;
+    }    
+}
+@media (max-width: 320px){
+    #header{
+        height: 17.5rem;           
+    }   
+}
+/* adaptations for smaller screens */
+@media (max-width: 600px){
+    /* new funtion of navbar with Hamburger Menu*/
+    #header{
+        background-position:0%;
+        background-attachment: unset;   
+    }
+    nav{
+        justify-content: flex-end;
+        background-color: #362FD9;
+        opacity: .75;
+    }
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }         
+    nav ul.show {
+        display: flex;
+    }
+      
+    .h-button {
+        display: block;
+    }
+    nav ul li:hover{
+        border: none;
+        background-color: #3C84AB;        
+    }
+    nav ul li a{
+        letter-spacing: .25rem;
+        font-size: 0.8rem;
+        color: #DEFCF9;        
+    }
+    /* adaptation Head Section*/
+    .head-container{
+        width: auto;
+        color: #3C84AB;
+        margin-top: auto;
+        margin-left: 40%;
+        margin-right: auto;
+        padding-top: 4rem;
+        text-align:justify;               
+    }
+    .head-container h1{
+        font-size: 2rem;        
+    }
+    .head-container h3{
+        font-size: 1rem;
+    }
+    .head-container a{display: block;
+        margin-top: 1rem;  
+        color: #DEFCF9;
+        border: .5rem outset #ffa802;
+        border-radius: .5rem;        
+        font-size: 1rem;
+    }
+    /* adaptation of containers*/
+    .flex-container{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .text-container{
+        width: auto;
+        height: auto;
+        letter-spacing: normal;
+        line-height: normal;        
+    }
+    .img-container{
+        width: auto;
+    }
+        
+}
+    
+   
