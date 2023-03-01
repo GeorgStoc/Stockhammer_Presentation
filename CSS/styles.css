@@ -308,13 +308,19 @@ td{
         letter-spacing: normal;
         line-height: normal;        
     }
+    .modal{
+        padding: 5%;
+    }
     .img-container{
         width: auto;
     }
     /* modal 100% with */
     .modal-content{
         width: 100%;
-    }    
+    }
+    .close{
+        top: 1%;
+    }
 }
    
    
